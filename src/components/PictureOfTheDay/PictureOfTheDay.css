@@ -1,0 +1,17 @@
+.photo {
+    width: 40vw;
+    height: auto;
+    min-height: 30vh;
+    min-width: auto;
+    max-height: 50vw;
+    max-width: 40vw;
+}
+
+@media only screen and (max-width: 850px) {
+    .photo {
+        max-width: 80vw;
+        height: auto;
+        width: 80vw;
+        max-height: 30vh;
+    }
+}

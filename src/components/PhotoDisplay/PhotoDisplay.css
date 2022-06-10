@@ -10,12 +10,6 @@
     display: flex;
 }
 
-.photo {
-    max-width: 40vw;
-    height: auto;
-    max-height: 50vh;
-}
-
 .photoTitle {
     font-size: 2rem;
     width: 80vw;

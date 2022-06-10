@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { AppContext } from '../../App'
+import PictureOfTheDay from '../PictureOfTheDay/PictureOfTheDay'
 import './PhotoDisplay.css'
 
 const PhotoDisplay = () => {
@@ -11,11 +12,7 @@ const PhotoDisplay = () => {
                  <h2 >{photoData.title}</h2>
             </div>
             <div className='content'>
-                <img
-                    src={photoData.hdurl}
-                    className="photo"
-                    alt={photoData.title}
-                />
+                <PictureOfTheDay />
                 <p>{photoData.explanation}</p>
             </div>
         </div>

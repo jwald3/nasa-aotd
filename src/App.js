@@ -9,7 +9,11 @@ const API_KEY = process.env.REACT_APP_API_KEY;
 export const AppContext = createContext();
 
 function App() {
-    const [date, setDate] = useState(new Date().toISOString().slice(0, 10));
+    const [date, setDate] = useState(
+        new Date(new Date().getTime() - new Date().getTimezoneOffset() * 60000)
+            .toISOString()
+            .split("T")[0]
+    );
     const [photoData, setPhotoData] = useState({
         date: "",
         explanation: "",

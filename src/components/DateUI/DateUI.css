@@ -54,3 +54,21 @@
         font-size: 5vmin;
     }
 }
+
+@media only screen and (max-height: 400px) {
+    .fullDate {
+        font-size: 3.5vmin;
+        padding-left: 1vmin;
+        padding-right: 1vmin;
+    }
+
+    .date-picker {
+        width: 100%;
+        font-size: 0.5rem;
+        font-family: "san-serif";
+        padding: 0.5vmin 1vmin;
+        font-family: "roboto", "sans-serif";
+        margin-right: 10%;
+        cursor: pointer;
+    }
+}

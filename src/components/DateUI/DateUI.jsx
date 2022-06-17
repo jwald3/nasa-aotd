@@ -68,6 +68,7 @@ const DateUI = () => {
                     type="date" 
                     min={'1995-06-16'}
                     max={TODAY}
+                    value={date}
                     className="date-picker"
                     onChange={(e) => setDate(e.target.value)}
                 />
